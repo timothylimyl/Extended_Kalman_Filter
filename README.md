@@ -41,12 +41,13 @@ Note that the RMSE value is very close to that of only using Lidar measurements 
 An example of the car tracking the bicycle using both Lidar and Radar sensor measurements:
 
 
+
 Note that the RMSE value is the lowest when both sensor data are fused as this reduces the uncertainty in our sensor measurements which provides better estimation on the states of the bicycle. 
 
 
 ## Discussion
 
-As mentioned in the Radar Sensor Measurement section, UKF are better than EKF when non-linear equations needs to be computed. Please read this paper [**HERE**] to gain the understanding and proves. Therefore, I am looking forward to implementing UKF soon for my next project!
+As mentioned in the Radar Sensor Measurement section, UKF are better than EKF when non-linear equations needs to be computed. Please read this paper [**HERE**](https://www.seas.harvard.edu/courses/cs281/papers/unscented.pdf) to gain the understanding and proves. Therefore, I am looking forward to implementing UKF soon for my next project!
 
 It has been shown that when Lidar and Radar sensors are both used together, the RMSE value is the lowest. The estimation provided was the best because by fusing both sensor data together, the sensor data can in a way "cross-check" each other to lower the overall uncertainty. An analogy would be us  opening two eyes at once instead of opening one at all times when we navigate around the world. With two eyes open, we are more confident with navigating around the world.
 
