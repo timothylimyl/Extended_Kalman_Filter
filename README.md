@@ -13,7 +13,7 @@ Utilising Lidar and Radar sensor data measurements with the Extended Kalman Filt
 
 #### 1. No Sensor 
 
-An example of the car tracking the bicycle without use any sensor data:
+An example of the car tracking the bicycle without use any sensor data (no estimation produced):
 
 ![](result_images/no_sensor.PNG)
 
