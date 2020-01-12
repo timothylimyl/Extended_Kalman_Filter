@@ -13,7 +13,7 @@ Utilising Lidar and Radar sensor data measurements with the Extended Kalman Filt
 
 #### 1. No Sensor 
 
-An example of the car tracking the bicycle without use any sensor data (no estimation produced):
+An example of the car tracking the bicycle without use of any sensor data (no estimation):
 
 ![](result_images/no_sensor.PNG)
 
@@ -22,7 +22,7 @@ Note that the Root Mean Square Error (RMSE) value for the states are very high a
 
 ##### 2. Lidar only
 
-*Note that the **RED** circle is the Lidar measurements while the **BLUE** is the Radar measurements. **GREEN** is the estimation of the bicycle position.
+*Note that the **RED** circle is the Lidar measurements while the **BLUE** is the Radar measurements. **GREEN** triangles are the estimations of the bicycle position.
 
 An example of the car tracking the bicycle using only Lidar sensor measurements:
 
@@ -37,7 +37,7 @@ An example of the car tracking the bicycle using only Radar sensor measurements:
 
 ![](result_images/radar.PNG)
 
-Note that the RMSE value is very close to that of only using Lidar measurements but the RMSE value is higher. This is because Radar Sensor is affected by more noise than the Lidar Sensor. Radar Sensor provides a non-linear function in our calculations, the linearisation process of computing the Jacobian Matrix itself is an example of extra noise being incorporated into the calculation. This is the reason why Unscented Kalman Filter (UKF) has been recommended to be use for non-linear cases.
+Note that the RMSE value is very close to that of using only Lidar measurements but the RMSE value is higher. This is because Radar Sensor is affected by more noise than the Lidar Sensor. Radar Sensor provides a non-linear function in our calculations, the linearisation process of computing the Jacobian Matrix itself is an example of extra noise being incorporated into the calculation. This is the reason why Unscented Kalman Filter (UKF) has been recommended to be use for non-linear cases.
 
 
 #### 4. Lidar and Radar (Sensor fusion)
